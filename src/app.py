@@ -9,8 +9,6 @@ from datastructures import FamilyStructure
 #from models import Person
 from models import Person
 
-
-
 """    
     + id: Int
     + first_name: String
@@ -127,8 +125,6 @@ def handle_delete_member(member_id):
     if not deleted:
         raise APIException("Member not found", status_code=404)
     return jsonify({"msg": "Member deleted successfully"}), 200
-
-
 
 body: {
     done: True
